@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <nav class="navbar bg-dark" data-bs-theme="dark" id="nav">
+    <div class="container-fluid">
+      <a style="color: rgb(108, 239, 108);" class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+        Smart Agriculture
+      </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li style="margin-left: 50px;cursor: pointer;" class="nav-item">
+            <a class="nav-link active" aria-current="page" href="weather.html">Tempreture</a>
+          </li>
+        </ul>
+        <script>
+         </script>
+      </div>
+    </div>
+  </nav><br><br>
+
+  <style>
+     @media (min-width:1300px)
+     {
+        #one{
+          margin-left: 700px;
+          margin-top: -400px;
+        }
+        #three{
+            margin-left: 590px;
+            margin-top: -440px;
+        }
+        .container{
+            margin-left: 1000px;
+        }
+        .container1{
+            display: none;
+        }
+     }
+        @media (min-width:1200px)
+       {
+        #wh{
+            display: none;
+        }
+        .container1{
+            display: none;
+        }
+        #one{
+          margin-left: 500px;
+          margin-top: -400px;
+        }
+        #three{
+            margin-left: 500px;
+            margin-top: -440px;
+        }
+        .container{
+            margin-left: 200px;
+        }
+       
+    }
+    @media (min-width:1000px)
+       {
+        #wh{
+            display: none;
+        }
+        .container1{
+            display: none;
+        }
+        #one{
+          margin-left: 500px;
+          margin-top: -400px;
+        }
+        #three{
+            margin-left: 500px;
+            margin-top: -440px;
+        }
+        .container{
+            margin-left: 130px;
+        }
+    }
+       
+    @media (min-width:900px)
+       {
+        #wh{
+            display: none;
+        }
+        .container1{
+            display: none;
+        }
+        #one{
+          margin-left: 500px;
+          margin-top: -400px;
+        }
+        #three{
+            margin-left: 500px;
+            margin-top: -440px;
+        }
+        .container{
+            margin-left: 80px;
+        }
+       
+    } 
+    @media (max-width:850px)
+    {
+        .container{
+            display: none;
+        }
+        .container1{
+            margin-left: 200px;
+        }
+    }
+    
+    @media (max-width:395px)
+    {
+        .container{
+            display: none;
+        }
+        .container1{
+            margin-left: 45px;
+        }
+    }
+    @media (max-width:730px)
+    {
+        .container{
+            display: none;
+        }
+        .container1{
+            margin-left: 45px;
+        }
+    }
+    body{
+        background-image: url("Dash_img/back.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #preloader{
+    background: rgb(248, 242, 242) url("Dash_img/spinner.gif") no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    }
+    .btn:hover{
+        background-color: red;
+    }
+  </style>
+  <body>
+    <div id="preloader"></div>
+    <div class="container1">
+        <div class="card" style="width: 18rem; display: flex;align-items: center;background-color: aquamarine;">
+            <img src="Dash_img/user.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">New Client Register</h5>
+              <a href="registers.html" class="btn btn-primary">Go Forward</a>
+            </div>
+          </div><br><br>
+    
+          <div class="card"style="width: 18rem;display: flex;align-items: center;background-color: aquamarine;">
+            <img src="Dash_img/crop.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">New Crop Add</h5>
+              <a href="https://smartagriculture2023.github.io/smartagriculture2023/" class="btn btn-primary">Go Forward</a>
+            </div>
+          </div><br><br>
+    
+          <div class="card"style="width: 18rem;display: flex;align-items: center;background-color: aquamarine;">
+            <img src="Dash_img/searching.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">View Clients</h5>
+              <a href="viewer.html" class="btn btn-primary">Go Forward</a>
+            </div>
+          </div><br><br>
+    
+          <div class="card"style="width: 18rem;display: flex;align-items: center;background-color: aquamarine;">
+            <img src="Dash_img/query.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Contact</h5>
+              <a href="contact.html" class="btn btn-primary">Go Forward</a>
+            </div>
+          </div>
+       </div>
+       
+   <div class="container" style="margin-left: 360px;">
+    <div class="card" style="width: 18rem; display: flex;align-items: center;background-color: aquamarine;">
+        <img src="Dash_img/user.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">New Client Register</h5>
+          <a href="registers.html" class="btn btn-primary">Go Forward</a>
+        </div>
+      </div><br><br>
+
+      <div class="card" id="one" style="width: 18rem;display: flex;align-items: center;background-color: aquamarine;">
+        <img src="Dash_img/crop.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">New Crop Add</h5>
+          <a href="https://smartagriculture2023.github.io/smartagriculture2023/" class="btn btn-primary">Go Forward</a>
+        </div>
+      </div><br><br>
+
+      <div class="card" id="two" style="width: 18rem;display: flex;align-items: center;background-color: aquamarine;">
+        <img src="Dash_img/searching.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">View Clients</h5>
+          <a href="viewer.html" class="btn btn-primary">Go Forward</a>
+        </div>
+      </div><br><br>
+
+      <div class="card" id="three" style="width: 18rem;display: flex;align-items: center;background-color: aquamarine;">
+        <img src="Dash_img/query.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Contact</h5>
+          <a href="contact.html" class="btn btn-primary">Go Forward</a>
+        </div>
+      </div>
+   </div>
+   <script>
+    let loader=document.getElementById('preloader');
+      window.addEventListener("load",()=>{
+        loader.style.display="none";
+      });
+   </script>
+  </body>
+</html>
